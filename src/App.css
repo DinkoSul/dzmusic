@@ -1,38 +1,59 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
+  max-width: 320px;
+  margin: 80px auto;
+}
+
+.HeaderArt {
+  display: block;
+}
+
+.HeaderTitle {
+  background-color: #000;
+  color: #fff;
   text-align: center;
+  padding: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.HeaderDescription {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.LinkList {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.LinkListItem {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 16px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-items: baseline;
 }
 
-.App-link {
-  color: #61dafb;
+.LinkListItemLabel {
+  flex: 1 1 auto;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Button {
+  border: 1px solid #bbb;
+  padding: 4px 12px;
+  min-width: 64px;
+  text-align: center;
+  font-size: 1.6rem;
 }
